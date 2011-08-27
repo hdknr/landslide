@@ -134,11 +134,12 @@ def _parse_options():
 
     (options, args) = parser.parse_args()
 
-    if not args:
-        parser.print_help()
-        sys.exit(1)
-
-    return options, args[0]
+#    if not args:
+#        parser.print_help()
+#        sys.exit(1)
+#
+#    return options, args[0]
+    return options, args[0] if args else None
 
 
 def log(message, type):
@@ -159,6 +160,10 @@ def main():
     """
     options, input_file = _parse_options()
 
+    if not input_file :
+        parser.print_help()
+        sys.exit(1)
+        
     if (options.debug):
         run(input_file, options)
     else:
