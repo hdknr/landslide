@@ -1,0 +1,386 @@
+[
+  {
+    "pk": 5, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "contenttype", 
+      "name": "content type", 
+      "app_label": "contenttypes"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "group", 
+      "name": "group", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "logentry", 
+      "name": "log entry", 
+      "app_label": "admin"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "message", 
+      "name": "message", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "permission", 
+      "name": "permission", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "session", 
+      "name": "session", 
+      "app_label": "sessions"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "site", 
+      "name": "site", 
+      "app_label": "sites"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "slide", 
+      "name": "Slide", 
+      "app_label": "landslide"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "user", 
+      "name": "user", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": "87f90d96a7b50095e6618addc0bbff14", 
+    "model": "sessions.session", 
+    "fields": {
+      "expire_date": "2011-09-10 15:20:30", 
+      "session_data": "MTRkOWJiNzRlZDQ0NDdhODk1NTI1NzQxYjE3MjQ3NDBjYWUyN2UzNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "sites.site", 
+    "fields": {
+      "domain": "example.com", 
+      "name": "example.com"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2011-08-27 15:21:02", 
+      "object_repr": "Slide object", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "landslide.slide", 
+    "fields": {
+      "title": "Landslide", 
+      "text": "Landslide\r\n=========\r\n\r\n---\r\n\r\nLandslide\r\n---------\r\n\r\n.notes: plop\r\n\r\nGenerates a slideshow using the slides that power\r\n[the html5-slides presentation](http://apirocks.com/html5/html5.html).\r\n\r\nA `python` with the `jinja2`, `markdown`, and `pygments` modules is required.\r\n\r\nMarkdown Formatting Instructions\r\n--------------------------------\r\n\r\n- Separate your slides with a horizontal rule (--- in markdown)\r\n- Your first slide (title slide) should not have a heading, only `<p>`s\r\n- Your other slides should have a heading that renders to an h1 element\r\n- To highlight blocks of code, put !{{lang}} as the first indented line\r\n- See the included slides.md for an example\r\n\r\nRendering Instructions\r\n----------------------\r\n\r\n- Put your markdown content in a file called `slides.md`\r\n- Run `python render.py`\r\n- Enjoy your newly generated `presentation.html`\r\n\r\n---\r\n\r\n\r\nSlide #2\r\n========\r\n\r\n.fx: foo bar\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna tellus,\r\nfermentum nec venenatis nec, dapibus id metus. Phasellus nulla massa, consequat\r\nnec tempor et, elementum viverra est. Duis sed nisl in eros adipiscing tempor.\r\n\r\nSection #1\r\n----------\r\n\r\nInteger in dignissim ipsum. Integer pretium nulla at elit facilisis eu feugiat\r\nvelit consectetur.\r\n\r\nSection #2\r\n----------\r\n\r\nDonec risus tortor, dictum sollicitudin ornare eu, egestas at purus. Cras\r\nconsequat lacus vitae lectus faucibus et molestie nisl gravida. Donec tempor,\r\ntortor in varius vestibulum, mi odio laoreet magna, in hendrerit nibh neque eu\r\neros.\r\n\r\nUnicode Characters Work\r\n-----------------------\r\n\r\n&#169; &#233;\r\n\r\n---\r\n\r\nMiddle Title Slide\r\n==================\r\n\r\n---\r\n\r\nSlide #3\r\n========\r\n\r\n**Hello Gentlemen**\r\n\r\n- Mega Man 2\r\n- Mega Man 3\r\n- Spelunky\r\n- Dungeon Crawl Stone Soup\r\n- Etrian Odyssey\r\n\r\n*Are you prepared to see beyond the veil of reason?* - DeceasedCrab\r\n\r\n- Black Cascade\r\n- Two Hunters\r\n- Diadem of 12 Stars\r\n\r\n---\r\n\r\nSlide #4\r\n========\r\n\r\nFirst code block:\r\n\r\n    !python\r\n    while True:\r\n        print \"Everything's gonna be allright\"\r\n\r\nSecond code block:\r\n\r\n    !php\r\n    <?php exec('python render.py --help'); ?>\r\n\r\nThird code block:\r\n\r\n    !xml\r\n    <?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n    <painting>\r\n      <img src=\"madonna.jpg\" alt='Foligno Madonna, by Raphael'/>\r\n      <caption>This is Raphael's \"Foligno\" Madonna, painted in\r\n        <date>1511</date>&#8211;<date>1512</date>.\r\n      </caption>\r\n    </painting>\r\n\r\n---\r\n\r\nSlide #5\r\n========\r\n\r\nAnother code block:\r\n\r\n    !java\r\n    if (markdown && isEasy()) {\r\n        return true; \r\n    }\r\n\r\n---\r\n\r\nSlide #6\r\n========\r\n\r\nAn image:\r\n\r\n\r\n---\r\n\r\nSlide #7\r\n========\r\n\r\nLandslide can generate QR codes:\r\n\r\n.qr: 450|http://github.com/adamzap/landslide\r\n\r\n---\r\n\r\nThis is a slide with no heading. It works too.\r\n", 
+      "markup": ".md", 
+      "creator": null, 
+      "dt_created": "2011-08-27 15:20:36", 
+      "updater": null, 
+      "dt_updated": "2011-08-27 15:20:36"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_logentry", 
+      "name": "Can add log entry", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_logentry", 
+      "name": "Can change log entry", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_logentry", 
+      "name": "Can delete log entry", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_group", 
+      "name": "Can add group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_group", 
+      "name": "Can change group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_group", 
+      "name": "Can delete group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_message", 
+      "name": "Can add message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_message", 
+      "name": "Can change message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_message", 
+      "name": "Can delete message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_permission", 
+      "name": "Can add permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_permission", 
+      "name": "Can change permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_permission", 
+      "name": "Can delete permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_user", 
+      "name": "Can add user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_user", 
+      "name": "Can change user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_user", 
+      "name": "Can delete user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_contenttype", 
+      "name": "Can add content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_contenttype", 
+      "name": "Can change content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_contenttype", 
+      "name": "Can delete content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_slide", 
+      "name": "Can add Slide", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_slide", 
+      "name": "Can change Slide", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_slide", 
+      "name": "Can delete Slide", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_session", 
+      "name": "Can add session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_session", 
+      "name": "Can change session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_session", 
+      "name": "Can delete session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_site", 
+      "name": "Can add site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_site", 
+      "name": "Can change site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_site", 
+      "name": "Can delete site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2011-08-27 15:20:30", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$bc2fe$540633eee54a35304311e03e26e7f1957f4fd57b", 
+      "email": "admin@admin.com", 
+      "date_joined": "2011-08-27 15:20:06"
+    }
+  }
+]
