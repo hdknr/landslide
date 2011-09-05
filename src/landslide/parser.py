@@ -15,6 +15,7 @@
 #  limitations under the License.
 
 import re
+import sys
 
 SUPPORTED_FORMATS = {
     'markdown':         ['.mdown', '.markdown', '.markdn', '.md', '.mdn'],
@@ -77,7 +78,8 @@ class Parser(object):
             html = html_body(text, input_encoding=self.encoding)
             # RST generates pretty much markup to be removed in our case
             for (pattern, replacement, mode) in self.RST_REPLACEMENTS:
-                html = re.sub(pattern, replacement, html, 0, mode)
+                html = re.sub(pattern, replacement, html,0 ) if sys.version_info < (2,7) else \
+                       re.sub(pattern, replacement, html, 0, mode)
             return html.strip()
         elif self.format == 'textile':
             try:
